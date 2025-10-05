@@ -12,7 +12,7 @@ A full-stack **Book Review Platform** built with **MERN stack (MongoDB, Express,
 - [API Endpoints](#api-endpoints)
 - [Usage](#usage)
 - [Future Enhancements](#future-enhancements)
-- [License](#license)
+- API Testing On Postman (#https://web.postman.co/workspace/My-Workspace~5f858717-cecf-490c-8cde-b72535b7c89b/collection/40934237-34ff1b78-8ad9-48c7-bba1-47d08b38cb71?action=share&source=copy-link&creator=40934237)
 
 ---
 
