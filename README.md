@@ -9,8 +9,6 @@ A full-stack **Book Review Platform** built with **MERN stack (MongoDB, Express,
 - [Features](#features)
 - [Tech Stack](#tech-stack)
 - [Project Structure](#project-structure)
-- [Backend Setup](#backend-setup)
-- [Frontend Setup](#frontend-setup)
 - [API Endpoints](#api-endpoints)
 - [Usage](#usage)
 - [Future Enhancements](#future-enhancements)
@@ -42,37 +40,124 @@ A full-stack **Book Review Platform** built with **MERN stack (MongoDB, Express,
 ## **Project Structure**
 
 book-review-platform/
+
 ├── backend/
+
 │ ├── server.js # Backend entry point
+
 │ ├── config/db.js # MongoDB connection
+
 │ ├── middleware/authMiddleware.js
+
 │ ├── models/
+
 │ │ ├── User.js
+
 │ │ ├── Book.js
+
 │ │ └── Review.js
+
 │ ├── routes/
+
 │ │ ├── authRoutes.js
+
 │ │ ├── bookRoutes.js
+
 │ │ └── reviewRoutes.js
+
 │ └── controllers/
+
 │ ├── authController.js
+
 │ ├── bookController.js
+
 │ └── reviewController.js
+
 │
+
 ├── frontend/
+
 │ ├── src/
+
 │ │ ├── api/axios.js
+
 │ │ ├── components/Navbar.jsx
+
 │ │ ├── pages/
+
 │ │ │ ├── Signup.jsx
+
 │ │ │ ├── Login.jsx
+
 │ │ │ ├── BookList.jsx
+
 │ │ │ ├── BookDetails.jsx
+
 │ │ │ └── AddBook.jsx
+
 │ │ ├── routes/PrivateRoute.jsx
+
 │ │ ├── App.js
+
 │ │ └── index.js
+
 │ └── package.json
+
 │
+
 ├── package.json
+
 └── README.md
+
+## **API Endpoints**
+Auth
+
+POST /api/auth/signup – Signup a new user
+
+POST /api/auth/login – Login and get JWT token
+
+Books
+
+GET /api/books – Get all books
+
+POST /api/books – Add a new book (protected)
+
+GET /api/books/:id – Get single book details
+
+PUT /api/books/:id – Update book (protected)
+
+DELETE /api/books/:id – Delete book (protected)
+
+Reviews
+
+POST /api/reviews – Add a review (protected)
+
+PUT /api/reviews/:id – Update review (protected)
+
+DELETE /api/reviews/:id – Delete review (protected)
+
+## **Usage**
+
+Signup as a new user.
+
+Login using your credentials.
+
+View all books on the homepage.
+
+Click on a book to see details and reviews.
+
+Add a new book if logged in.
+
+Post reviews for any book if logged in.
+
+## **Future Enhancements**
+
+Add ratings with stars.
+
+Implement profile management for users.
+
+Add pagination and search for books.
+
+Improve UI/UX with modals and better layouts.
+
+Add admin dashboard for managing books and reviews.
